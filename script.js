@@ -40,3 +40,22 @@ document.querySelector('#get_button').onclick = function(){
       console.error(error);
     });
 }
+
+
+
+const h2_test = document.querySelector("#h2_test");
+const test_text = document.querySelector("#test_text");
+
+document.querySelector("#test_button").onclick = function () {
+  const text = test_text.value;
+  h2_test.innerText = text;
+}
+
+
+
+function test_func(p1, p2){
+  return p1 + p2;
+} 
+
+console.log(test_func(1,2))
+
